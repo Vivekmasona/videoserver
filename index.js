@@ -5,7 +5,7 @@ const app = express();
 // const fs = require("fs");
 
 const corsOptions = {
-  origin: "https://vidr-sp.netlify.app", // change this origin as your like
+  origin: "https://vivekfy.netlify.app", // change this origin as your like
   // origin: "http://localhost:3000",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
@@ -42,7 +42,7 @@ app.get("/download", async (req, res) => {
   // const info = await ytdl.getInfo(url);
   // const title = info.videoDetails.title;
 
-  res.header("Content-Disposition", `attachment;  filename="file.${type}"`);
+  res.header("Content-Disposition", `attachment;  filename="Download from.vivekmasona"`);
   try {
     ytdl(url, { itag }).pipe(res);
   } catch (err) {
